@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+          background-color: lightblue;
+        }
+        
+        h1 {
+          color: white;
+          text-align: center;
+        }
+        h2 {
+          color: red;
+          text-align: center;
+        }
+        h3 {
+          color:sienna;
+          text-align: left;
+        }
+        p {
+    font-family: verdana;
+    font-size: 10px;
+     }
+        </style>
+        
+    <head>
+      <h3 id="head"></h3>
+        <script>
+               
+            function heading()
+            {
+                document.getElementById("heading").style.color="green";
+                document.getElementById("heading").innerHTML = "Learn JavaScript!";
+            }     
+            document.getElementById("head").innerHTML = "TestingSchool"; 
+            document.write(10+12);
+        </script>
+   
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <h2 id="heading">Thiniking to Learn</h2>
+        <button type="button" onclick="heading()">Desired</button>
+        <button type="button" onclick="para()">Automation</button>
+        <p id="paragragh">Next steps to do </p>
+        <h3 > Download:Node.js</h3>
+         <p >Type nodejs in google:  https://nodejs.org/en/download/  [windows  Installer (.msi)].<br>
+         Set System Variable:NODE_HOME --> C:\Program Files\nodejs </p>
+        <h3 >Visual studio code Editor for Java scripting</h3>
+         <p >Type vscode in google: https://code.visualstudio.com/download [Microsoft  product]</p>
+        <h3>Create workspace for Cypress Project </h3>
+            Example: D:\Project\Learn<br>
+            <h3 >Create workspace for Cypress Project </h3>
+            <h3 >Open folder from vscode</h3>
+            File → Open → D:\Project\Learn<br> 
+            <button type="button" onclick="myfun()">show</button>
+          <p id="show" style="display:none">Thank you! All the Best</p>            
+        <script src="script.js"></script> 
+       <script>
+           function para()
+            {
+                document.getElementById("paragragh").style.fontSize = "30px";
+                document.getElementById("paragragh").style.color="green";
+                 document.getElementById("paragragh").innerHTML = "Cypress -unit,integration and End to end Testing!";
+            }
+        
+
+        </script>
+      
+    </head>
+</html>
