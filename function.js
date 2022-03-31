@@ -6,7 +6,7 @@
 }
 emptyParam() */
 //Param with returns
-function paramPass(role,match)
+/* function paramPass(role,match)
 {
     if (match)
     {
@@ -15,12 +15,12 @@ function paramPass(role,match)
     console.log("Not Matched")
  return role +" not selected";
 }
-//console.log(paramPass("Tester","Automation profile" ))
+console.log(paramPass("Tester","Automation profile" )) */
 
-console.log(paramPass("Tester"))
+//console.log(paramPass("Tester"))
 
 
-//Flexbile function 
+//Flexible function 
 //Sum of an array
 var sum=function()
 {

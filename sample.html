@@ -25,24 +25,39 @@
         
     <head>
       <h3 id="head"></h3>
-        <script>
-               
+        <script>             
             function heading()
             {
                 document.getElementById("heading").style.color="green";
                 document.getElementById("heading").innerHTML = "Learn JavaScript!";
+                /*  Add Element and Attribute  */
+         document.getElementById("head").innerHTML = "QE-HUDDLE"; 
+        //document.write(10+12); 
+        
             }     
-            document.getElementById("head").innerHTML = "TestingSchool"; 
-            document.write(10+12);
+     
         </script>
-   
+          <!-- Remove Elememt from HTMLheading  -->
+         <button onclick="myFunction()">Remove heading</button>
+        <script>
+        function myFunction() {
+          var myobj = document.getElementById("head");
+          myobj.remove();
+        }
+      </script> 
     </head>
     <body>
         <h1>Welcome</h1>
         <h2 id="heading">Thiniking to Learn</h2>
+       <!--  Exisitng Colour and InnerText update -->
+       <!-- Kept js in Head -->
         <button type="button" onclick="heading()">Desired</button>
+
+        <!--  Exisitng Colour,size and InnerText update -->
+       <!-- Kept js at the bottom of Page -->
         <button type="button" onclick="para()">Automation</button>
         <p id="paragragh">Next steps to do </p>
+
         <h3 > Download:Node.js</h3>
          <p >Type nodejs in google:  https://nodejs.org/en/download/  [windows  Installer (.msi)].<br>
          Set System Variable:NODE_HOME --> C:\Program Files\nodejs </p>
@@ -53,6 +68,8 @@
             <h3 >Create workspace for Cypress Project </h3>
             <h3 >Open folder from vscode</h3>
             File → Open → D:\Project\Learn<br> 
+            <!-- Kept js outside-->
+            <!-- Hidden Parameter -tyle="display:none" -->
             <button type="button" onclick="myfun()">show</button>
           <p id="show" style="display:none">Thank you! All the Best</p>            
         <script src="script.js"></script> 
@@ -67,5 +84,5 @@
 
         </script>
       
-    </head>
+  
 </html>
